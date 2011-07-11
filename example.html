@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script> 	
+    <script src="jquery.justifyNav.js"></script>
+	<script>
+		$(document).ready(function(){	
+			$('ul#main-nav').justifyNav();
+		});
+	</script>
+	<title>jquery.justifyNav example</title>
+	<style>
+		* {margin: 0; padding: 0;}
+		#main-nav {width: 500px; margin:50px auto; border: 1px solid green;  overflow: hidden; *zoom: 1;}
+		#main-nav li {display: block; float: left;}
+		#main-nav li a {display: inline-block;}
+	</style>
+</head>
+<body>
+<ul id="main-nav">
+	<li><a href="#">item one</a></li>
+	<li><a href="#">longer item two</a></li>
+	<li><a href="#">item 3</a></li>
+	<li><a href="#">another item</a></li>
+	<li><a href="#">5th item</a></li>
+</ul>
+</body>
+</html>
+
