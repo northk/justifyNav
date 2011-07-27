@@ -36,7 +36,7 @@
 				linksWidth = 0,
 				count = $children.length;
 			$children.each(function() {
-				linksWidth += $(this).width();
+				linksWidth += $(this).outerWidth();
 			});
 
 			// Don't give the last item or the 2nd to last item any right margin, then float the last item right. 
